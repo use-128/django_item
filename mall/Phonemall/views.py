@@ -9,5 +9,8 @@ from django.http import HttpResponse
 
 
 def index(request):
+    contex = {
+        'name':'xhahxahxhadajndkjasnd'
+    }
 
-    return HttpResponse("ok")
+    return render(request,'book/index.html',context=contex)
